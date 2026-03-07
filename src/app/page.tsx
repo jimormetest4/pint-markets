@@ -1,6 +1,7 @@
 "use client";
 
 import CeefaxLayout from "@/components/CeefaxLayout";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface PriceRow {
@@ -139,6 +140,23 @@ function EmptyState() {
             <span className="text-ceefax-yellow">—</span>
           </p>
         </div>
+      </div>
+
+      {/* SUBMIT CTA */}
+      <div className="text-center py-2">
+        <Link
+          href="/submit"
+          className="inline-block bg-ceefax-green text-black font-bold px-6 py-2 text-base sm:text-lg md:text-xl tracking-wide hover:brightness-110 transition-none"
+        >
+          ▶ SUBMIT A PINT PRICE ◀
+        </Link>
+        <p className="text-ceefax-cyan text-sm mt-1">
+          Help us track London&apos;s pint prices
+        </p>
+      </div>
+
+      <div className="text-ceefax-yellow overflow-hidden whitespace-nowrap">
+        ════════════════════════════════════════════════
       </div>
 
       <div className="text-ceefax-magenta mt-4">
@@ -281,6 +299,23 @@ function LiveData({ data }: LiveDataProps) {
             {data.stats.lastUpdate ?? "—"}
           </p>
         </div>
+      </div>
+
+      <div className="text-ceefax-yellow mt-2 overflow-hidden whitespace-nowrap">
+        ════════════════════════════════════════════════
+      </div>
+
+      {/* SUBMIT CTA */}
+      <div className="text-center py-2">
+        <Link
+          href="/submit"
+          className="inline-block bg-ceefax-green text-black font-bold px-6 py-2 text-base sm:text-lg md:text-xl tracking-wide hover:brightness-110 transition-none"
+        >
+          ▶ SUBMIT A PINT PRICE ◀
+        </Link>
+        <p className="text-ceefax-cyan text-sm mt-1">
+          Help us track London&apos;s pint prices
+        </p>
       </div>
 
       <div className="text-ceefax-yellow mt-2 overflow-hidden whitespace-nowrap">
