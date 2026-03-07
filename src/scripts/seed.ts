@@ -126,7 +126,7 @@ async function seed() {
   let pricesAdded = 0;
   let geocoded = 0;
   let geocodeFailed = 0;
-  let errors: string[] = [];
+  const errors: string[] = [];
 
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
@@ -175,7 +175,7 @@ async function seed() {
         pubsCreated++;
         console.log(`  + Created pub: ${pubName}`);
       }
-      pubCache.set(nameKey, pubId);
+      if (pubId) pubCache.set(nameKey, pubId);
     }
 
     // Geocode pub if not already done

@@ -70,7 +70,13 @@ export async function POST(req: NextRequest) {
         pubId = newPub.id;
         pubsCreated++;
       }
-      pubCache.set(nameKey, pubId);
+      if (pubId) pubCache.set(nameKey, pubId);
+    }
+
+    if (!pubId) {
+      rowsSkipped++;
+      errors.push(`Row ${i + 1}: no pub ID resolved for "${pub_name}"`);
+      continue;
     }
 
     // Insert price

@@ -94,7 +94,7 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  let results = Array.from(pubMap.values());
+  const results = Array.from(pubMap.values());
 
   // Re-sort after deduplication
   if (sort === "price_desc") {

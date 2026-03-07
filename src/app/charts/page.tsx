@@ -209,7 +209,7 @@ function PriceOverTimeChart({ data }: PriceOverTimeProps) {
               contentStyle={TOOLTIP_CONTENT}
               labelStyle={{ color: "#ffff00" }}
               itemStyle={{ color: "#00ffff" }}
-              formatter={(v: number) => [penceToPounds(v), "AVG PRICE"]}
+              formatter={(v) => [penceToPounds(Number(v ?? 0)), "AVG PRICE"]}
             />
             <Line
               type="monotone"
@@ -281,7 +281,7 @@ function DistributionChart({ data }: DistributionProps) {
               contentStyle={TOOLTIP_CONTENT}
               labelStyle={{ color: "#ffff00" }}
               itemStyle={{ color: "#00ff00" }}
-              formatter={(v: number) => [`${v}`, "PUBS"]}
+              formatter={(v) => [`${v}`, "PUBS"]}
             />
             <Bar dataKey="count" fill="#00ff00" radius={0} />
           </BarChart>
@@ -343,7 +343,7 @@ function BoroughChart({ data }: BoroughChartProps) {
               contentStyle={TOOLTIP_CONTENT}
               labelStyle={{ color: "#ffff00" }}
               itemStyle={{ color: "#00ffff" }}
-              formatter={(v: number) => [penceToPounds(v), "AVG PRICE"]}
+              formatter={(v) => [penceToPounds(Number(v ?? 0)), "AVG PRICE"]}
             />
             <Bar dataKey="avg_pence" radius={0}>
               {data.map((entry, index) => {
@@ -420,7 +420,7 @@ function BrandChart({ data }: BrandChartProps) {
               contentStyle={TOOLTIP_CONTENT}
               labelStyle={{ color: "#ffff00" }}
               itemStyle={{ color: "#00ffff" }}
-              formatter={(v: number) => [penceToPounds(v), "AVG PRICE"]}
+              formatter={(v) => [penceToPounds(Number(v ?? 0)), "AVG PRICE"]}
             />
             <Bar dataKey="avg_pence" radius={0}>
               {data.map((entry, index) => {
