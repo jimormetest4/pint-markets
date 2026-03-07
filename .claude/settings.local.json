@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git -C \"/Users/jimorme/Documents/CC/Pint Markets\" log --oneline --all)",
+      "Bash(git -C \"/Users/jimorme/Documents/CC/Pint Markets\" show HEAD --stat)",
+      "Bash(python3:*)",
+      "Bash(npx supabase --version)",
+      "Bash(npm install --save-dev tsx)",
+      "Bash(npx tsx src/scripts/seed.ts)",
+      "WebFetch(domain:secretldn.com)",
+      "WebFetch(domain:www.designmynight.com)",
+      "WebFetch(domain:www.pint-prices.com)",
+      "WebFetch(domain:www.londonxlondon.com)",
+      "WebFetch(domain:www.samsmithschallenge.co.uk)",
+      "WebFetch(domain:www.jamesgretton.co.uk)",
+      "WebFetch(domain:www.tuppencemagazine.co.uk)",
+      "Bash(npx tsx src/scripts/seed.ts seed-data-extra.csv)",
+      "Bash(npx tsx scripts/populate-boroughs.ts)",
+      "Bash(npx tsx -e \":*)"
+    ]
+  }
+}

@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        ceefax: {
+          cyan: "#00ffff",
+          yellow: "#ffff00",
+          magenta: "#ff00ff",
+          green: "#00ff00",
+          red: "#ff0000",
+          blue: "#0000ff",
+          white: "#ffffff",
+        },
+      },
+      fontFamily: {
+        teletext: ['"VT323"', "monospace"],
       },
     },
   },

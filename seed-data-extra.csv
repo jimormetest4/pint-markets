@@ -1,0 +1,116 @@
+pub_name,postcode,brand,pint_type,price,date
+The Rochester Castle,N16,Wetherspoon,Bud Light,£1.99,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Carlsberg,£2.49,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Carling,£2.58,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Greene King IPA,£2.58,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Guinness,£3.30,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Stella Artois,£3.84,2026-03-07
+The Rochester Castle,N16,Wetherspoon,Corona,£3.95,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Bud Light,£2.89,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Carlsberg,£3.33,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Guinness,£4.07,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Carling,£4.41,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Stella Artois,£4.68,2026-03-07
+The Beehive (Brixton),SW9,Wetherspoon,Corona,£4.78,2026-03-07
+Fox on the Hill,SE5,Wetherspoon,Bud Light,£2.59,2026-03-07
+Fox on the Hill,SE5,Wetherspoon,Carlsberg,£2.83,2026-03-07
+Fox on the Hill,SE5,Wetherspoon,Guinness,£4.07,2026-03-07
+Fox on the Hill,SE5,Wetherspoon,Carling,£4.13,2026-03-07
+Fox on the Hill,SE5,Wetherspoon,Stella Artois,£4.55,2026-03-07
+The London & Rye,SE6,Wetherspoon,Bud Light,£2.43,2026-03-07
+The London & Rye,SE6,Wetherspoon,Carlsberg,£2.66,2026-03-07
+The London & Rye,SE6,Wetherspoon,Carling,£2.99,2026-03-07
+The London & Rye,SE6,Wetherspoon,Guinness,£3.09,2026-03-07
+The London & Rye,SE6,Wetherspoon,Stella Artois,£3.84,2026-03-07
+The Watch House,SE13,Wetherspoon,Bud Light,£2.59,2026-03-07
+The Watch House,SE13,Wetherspoon,Carlsberg,£2.83,2026-03-07
+The Watch House,SE13,Wetherspoon,Guinness,£3.53,2026-03-07
+The Watch House,SE13,Wetherspoon,Carling,£3.66,2026-03-07
+The Watch House,SE13,Wetherspoon,Stella Artois,£4.08,2026-03-07
+The London and South Western,SW11,Wetherspoon,Bud Light,£3.18,2026-03-07
+The London and South Western,SW11,Wetherspoon,Carlsberg,£3.66,2026-03-07
+The London and South Western,SW11,Wetherspoon,Guinness,£4.48,2026-03-07
+The London and South Western,SW11,Wetherspoon,Stella Artois,£5.15,2026-03-07
+The Ledger Building,E14,Wetherspoon,Bud Light,£4.13,2026-03-07
+The Ledger Building,E14,Wetherspoon,Carlsberg,£5.06,2026-03-07
+The Ledger Building,E14,Wetherspoon,Guinness,£5.74,2026-03-07
+The Ledger Building,E14,Wetherspoon,Stella Artois,£5.95,2026-03-07
+The Eagle,E9,Independent,Fosters,£4.30,2026-03-07
+The Three Crowns,N16,Independent,Amstel,£5.00,2026-03-07
+The Railway Tavern,N16,Independent,Asahi,£5.00,2026-03-07
+The Sun Tavern,E2,Independent,House Lager,£5.00,2026-03-07
+Farr's Dalston,E8,Independent,Neck Oil,£5.10,2026-03-07
+The White Hart,N16,Independent,Amstel,£5.25,2026-03-07
+Royal Sovereign,E5,Independent,Amstel,£5.50,2026-03-07
+Royal Sovereign,E5,Independent,Guinness,£6.00,2026-03-07
+The Old George,E2,Independent,Amstel,£5.60,2026-03-07
+Sebright Arms,E2,Independent,House Lager,£4.40,2026-03-07
+Three Compasses Dalston,E8,Independent,Hazy Jane,£4.90,2026-03-07
+The Scolt Head,N1,Independent,Peroni,£5.90,2026-03-07
+The Hunter S,N1,Independent,Guinness,£5.80,2026-03-07
+The Lord Tredegar,E3,Independent,House Lager,£6.00,2026-03-07
+The Morgan Arms,E3,Independent,Estrella,£6.65,2026-03-07
+The Shacklewell Arms,E8,Independent,Guinness,£7.00,2026-03-07
+Hand in Hand,SW2,Independent,Carlsberg,£3.10,2026-03-07
+Hand in Hand,SW2,Independent,Guinness,£3.90,2026-03-07
+Effra Social,SW2,Independent,Guinness,£5.00,2026-03-07
+Effra Social,SW2,Independent,House Lager,£5.20,2026-03-07
+Marquis of Lorne,SW9,Independent,Guinness,£4.80,2026-03-07
+Dogstar,SW9,Independent,Pravha,£5.25,2026-03-07
+Prince of Wales (Brixton),SW9,Independent,Stella Artois,£5.50,2026-03-07
+Prince of Wales (Brixton),SW9,Independent,Guinness,£5.75,2026-03-07
+Prince Albert (Brixton),SW9,Independent,Amstel,£5.40,2026-03-07
+Prince Albert (Brixton),SW9,Independent,Guinness,£5.45,2026-03-07
+Prince Albert (Brixton),SW9,Independent,Neck Oil,£6.15,2026-03-07
+Prince Albert (Brixton),SW9,Independent,Peroni,£6.50,2026-03-07
+Coach & Horses (Clapham),SW4,Independent,Amstel,£5.40,2026-03-07
+Bread & Roses,SW4,Independent,Carlsberg,£5.50,2026-03-07
+Rookery,SW4,Independent,Estrella,£5.50,2026-03-07
+Rookery,SW4,Independent,Camden Hells,£5.75,2026-03-07
+Rookery,SW4,Independent,Guinness,£5.80,2026-03-07
+Prince Regent,SE24,Independent,Guinness,£6.00,2026-03-07
+Prince Regent,SE24,Independent,Neck Oil,£6.60,2026-03-07
+Stonhouse,SW4,Independent,Amstel,£5.80,2026-03-07
+Abbeville,SW4,Independent,Amstel,£5.80,2026-03-07
+Abbeville,SW4,Independent,Guinness,£6.40,2026-03-07
+Falcon,SW4,Independent,Pravha,£6.25,2026-03-07
+Trinity Arms,SW9,Independent,Guinness,£6.40,2026-03-07
+Florence,SE24,Independent,Estrella,£6.50,2026-03-07
+Canton Arms,SW8,Independent,Heineken,£6.50,2026-03-07
+Windmill (Clapham),SW4,Independent,Estrella,£7.00,2026-03-07
+Last Outpost,SE13,Independent,House Lager,£4.00,2026-03-07
+Black Cat,SE6,Independent,John Smiths,£4.20,2026-03-07
+Fox and Firkin,SE13,Independent,House Lager,£4.50,2026-03-07
+Catford Bridge Tavern,SE6,Independent,House Lager,£5.10,2026-03-07
+The Blythe Hill Tavern,SE6,Independent,Guinness,£5.80,2026-03-07
+The Grapes (Wandsworth),SW18,Fuller's,London Pride,£4.95,2026-03-07
+The Grapes (Wandsworth),SW18,Fuller's,Fosters,£5.20,2026-03-07
+The Grapes (Wandsworth),SW18,Fuller's,Guinness,£5.40,2026-03-07
+The Pig & Whistle,SW18,Fuller's,London Pride,£5.50,2026-03-07
+The Pig & Whistle,SW18,Fuller's,Peroni,£6.85,2026-03-07
+The Cat's Back,SW18,Independent,Guinness,£6.90,2026-03-07
+The Cat's Back,SW18,Independent,Neck Oil,£7.20,2026-03-07
+Galvanisers Union,E3,Independent,Carling,£3.50,2026-03-07
+Galvanisers Union,E3,Independent,Guinness,£5.95,2026-03-07
+Galvanisers Union,E3,Independent,Neck Oil,£6.55,2026-03-07
+The Beckton Arms,E16,Independent,Carlsberg,£3.60,2026-03-07
+The Princess Alexandra,E16,Independent,Fosters,£4.00,2026-03-07
+The Star of the East,E14,Independent,Amstel,£5.15,2026-03-07
+The Grapes (Limehouse),E14,Independent,Carlsberg,£5.50,2026-03-07
+The Coborn,E3,Independent,Pravha,£5.85,2026-03-07
+The Coborn,E3,Independent,Neck Oil,£6.95,2026-03-07
+Surprise,SW8,Young's,London Pride,£5.00,2026-03-07
+Surprise,SW8,Young's,Madri,£5.40,2026-03-07
+Surprise,SW8,Young's,Guinness,£5.70,2026-03-07
+The Angel,SE16,Samuel Smith's,Cask Ale,£5.70,2026-03-07
+Earl of Lonsdale,W11,Samuel Smith's,Cask Ale,£5.70,2026-03-07
+Ye Olde Swiss Cottage,NW3,Samuel Smith's,Cask Ale,£5.70,2026-03-07
+Anchor (Bankside),SE1,Greene King,Greene King IPA,£6.30,2026-03-07
+Anchor (Bankside),SE1,Greene King,Guinness,£6.90,2026-03-07
+Anchor (Bankside),SE1,Greene King,Neck Oil,£7.70,2026-03-07
+Lord Clyde,SE1,Independent,Cask Ale,£6.15,2026-03-07
+Lord Clyde,SE1,Independent,Guinness,£6.65,2026-03-07
+BrewDog Wandsworth,SW18,BrewDog,Neck Oil,£5.95,2026-03-07
+Hackney Church Brew Co,E8,Craft Brewery,House Lager,£3.50,2026-03-07
+Five Points Brewery,E8,Craft Brewery,House Lager,£3.99,2026-03-07
+Beavertown Brewery Taproom,N17,Craft Brewery,House Lager,£5.50,2026-03-07

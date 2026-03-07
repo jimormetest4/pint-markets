@@ -1,0 +1,271 @@
+pub_name,postcode,brand,pint_type,price,date
+The Masque Haunt,EC2A,Wetherspoon,Bud Light,£2.49,2026-03-07
+The Masque Haunt,EC2A,Wetherspoon,Carling,£3.99,2026-03-07
+The Masque Haunt,EC2A,Wetherspoon,Guinness,£5.35,2026-03-07
+The Three Tuns (LSE),WC2A,Independent,Bud Light,£2.95,2026-03-07
+The Pommelers Rest,SE1,Wetherspoon,Bud Light,£2.99,2026-03-07
+The Pommelers Rest,SE1,Wetherspoon,Guinness,£5.42,2026-03-07
+The Pommelers Rest,SE1,Wetherspoon,Corona,£5.96,2026-03-07
+The Liberty Bounds,EC3N,Wetherspoon,Bud Light,£2.99,2026-03-07
+The Liberty Bounds,EC3N,Wetherspoon,Guinness,£5.64,2026-03-07
+Goodman's Field,E1,Wetherspoon,Bud Light,£2.99,2026-03-07
+Goodman's Field,E1,Wetherspoon,Guinness,£5.64,2026-03-07
+The Crosse Keys,EC3V,Wetherspoon,Bud Light,£2.99,2026-03-07
+The Crosse Keys,EC3V,Wetherspoon,London Pride,£4.44,2026-03-07
+The Crosse Keys,EC3V,Wetherspoon,Guinness,£5.64,2026-03-07
+The Sir John Hawkshaw,SE1,Wetherspoon,Bud Light,£3.49,2026-03-07
+The Sir John Hawkshaw,SE1,Wetherspoon,Guinness,£6.14,2026-03-07
+The Keys,SE1,Independent,Guinness,£3.50,2026-03-07
+Hamilton Hall,EC2M,Wetherspoon,Bud Light,£4.14,2026-03-07
+Hamilton Hall,EC2M,Wetherspoon,Guinness,£5.82,2026-03-07
+The Rockingham Arms,SE1,Wetherspoon,Bud Light,£2.49,2026-03-07
+The Rockingham Arms,SE1,Wetherspoon,Guinness,£5.35,2026-03-07
+The Captain Kidd,E1W,Independent,Triple Ale,£4.00,2026-03-07
+Windsor Fenchurch,EC3M,Independent,Doombar,£4.20,2026-03-07
+Windsor Fenchurch,EC3M,Independent,Guinness,£5.35,2026-03-07
+Windsor Fenchurch,EC3M,Independent,Neck Oil,£6.85,2026-03-07
+The Pride of Spitalfields,E1,Independent,Staropramen,£4.80,2026-03-07
+The Pride of Spitalfields,E1,Independent,Guinness,£5.50,2026-03-07
+The Old Justice,SE1,Independent,Guinness,£5.00,2026-03-07
+The Royal Oak,SE1,Independent,Harvey's Old Ale,£5.20,2026-03-07
+The Jugged Hare,EC1Y,Fuller's,Cask Ale,£5.60,2026-03-07
+The Jugged Hare,EC1Y,Fuller's,Amstel,£6.00,2026-03-07
+The Jugged Hare,EC1Y,Fuller's,Guinness,£7.20,2026-03-07
+The Barrowboy & Banker,SE1,Fuller's,London Pride,£5.95,2026-03-07
+The Barrowboy & Banker,SE1,Fuller's,Amstel,£6.20,2026-03-07
+The Barrowboy & Banker,SE1,Fuller's,Guinness,£7.05,2026-03-07
+The Barrowboy & Banker,SE1,Fuller's,Neck Oil,£7.55,2026-03-07
+The Counting House,EC3V,Fuller's,Amstel,£6.45,2026-03-07
+The Counting House,EC3V,Fuller's,Guinness,£7.05,2026-03-07
+The Counting House,EC3V,Fuller's,Peroni,£7.40,2026-03-07
+The Founder's Arms,SE1,Young's,Young's Original,£5.95,2026-03-07
+The Albion,SE1,Young's,Young's Original,£5.40,2026-03-07
+Cheshire Cheese,EC4A,Nicholson's (M&B),London Pride,£5.90,2026-03-07
+Cheshire Cheese,EC4A,Nicholson's (M&B),Amstel,£6.35,2026-03-07
+Cheshire Cheese,EC4A,Nicholson's (M&B),Guinness,£6.60,2026-03-07
+Cheshire Cheese,EC4A,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+The Blackfriar,EC4V,Nicholson's (M&B),Pravha,£6.50,2026-03-07
+The Old King's Head,SE1,Independent,London Pride,£5.50,2026-03-07
+Tower Bridge Arms,SE1,BrewDog,Lost Lager,£7.75,2026-03-07
+Tower Bridge Arms,SE1,BrewDog,Hazy Jane,£7.95,2026-03-07
+Seething Lane Tap,EC3N,BrewDog,Lost Lager,£7.75,2026-03-07
+Seething Lane Tap,EC3N,BrewDog,Hazy Jane,£7.95,2026-03-07
+The Dickens Inn,E1W,Independent,Guinness,£6.00,2026-03-07
+Anchor (Bankside),SE1,Greene King,Greene King IPA,£6.30,2026-03-07
+Anchor (Bankside),SE1,Greene King,Guinness,£6.90,2026-03-07
+Anchor (Bankside),SE1,Greene King,Neck Oil,£7.70,2026-03-07
+The Globe,EC4N,Nicholson's (M&B),Amstel,£6.90,2026-03-07
+The Globe,EC4N,Nicholson's (M&B),Guinness,£7.05,2026-03-07
+The Globe,EC4N,Nicholson's (M&B),Madri,£7.40,2026-03-07
+The Globe,EC4N,Nicholson's (M&B),Neck Oil,£7.80,2026-03-07
+Williamson's Tavern,EC4R,Nicholson's (M&B),Amstel,£6.50,2026-03-07
+Williamson's Tavern,EC4R,Nicholson's (M&B),Guinness,£6.75,2026-03-07
+Williamson's Tavern,EC4R,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+The Hoop and Grapes,EC3N,Nicholson's (M&B),Guinness,£6.65,2026-03-07
+The Hoop and Grapes,EC3N,Nicholson's (M&B),Neck Oil,£7.40,2026-03-07
+The Walrus and The Carpenter,EC4Y,Nicholson's (M&B),Amstel,£6.80,2026-03-07
+The Walrus and The Carpenter,EC4Y,Nicholson's (M&B),Guinness,£6.95,2026-03-07
+The Walrus and The Carpenter,EC4Y,Nicholson's (M&B),Neck Oil,£7.70,2026-03-07
+The Lord Aberconway,EC2M,Nicholson's (M&B),Amstel,£6.65,2026-03-07
+The Lord Aberconway,EC2M,Nicholson's (M&B),Guinness,£6.85,2026-03-07
+The Lord Aberconway,EC2M,Nicholson's (M&B),Neck Oil,£7.65,2026-03-07
+The Horniman at Hays,SE1,Nicholson's (M&B),Guinness,£7.15,2026-03-07
+The Horniman at Hays,SE1,Nicholson's (M&B),Madri,£7.50,2026-03-07
+The Horniman at Hays,SE1,Nicholson's (M&B),Neck Oil,£7.90,2026-03-07
+The Mudlark,SE1,Nicholson's (M&B),Guinness,£7.15,2026-03-07
+The Mudlark,SE1,Nicholson's (M&B),Madri,£7.50,2026-03-07
+The Mudlark,SE1,Nicholson's (M&B),Neck Oil,£7.90,2026-03-07
+The Old Thameside Inn,SE1,Nicholson's (M&B),Guinness,£7.15,2026-03-07
+The Old Thameside Inn,SE1,Nicholson's (M&B),Neck Oil,£7.90,2026-03-07
+The Sugar Loaf,EC4N,Nicholson's (M&B),Amstel,£6.50,2026-03-07
+The Sugar Loaf,EC4N,Nicholson's (M&B),Guinness,£6.75,2026-03-07
+The Sugar Loaf,EC4N,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Ye Olde Watling,EC4M,Nicholson's (M&B),Guinness,£6.40,2026-03-07
+Ye Olde Watling,EC4M,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+The Corn Exchange,EC3V,Nicholson's (M&B),Amstel,£6.20,2026-03-07
+The Corn Exchange,EC3V,Nicholson's (M&B),Guinness,£7.30,2026-03-07
+The Corn Exchange,EC3V,Nicholson's (M&B),Neck Oil,£7.80,2026-03-07
+All Bar One Moorgate,EC2M,M&B,Guinness,£6.25,2026-03-07
+All Bar One Moorgate,EC2M,M&B,Neck Oil,£7.25,2026-03-07
+All Bar One Cannon Street,EC4N,M&B,Guinness,£6.00,2026-03-07
+All Bar One Cannon Street,EC4N,M&B,Neck Oil,£7.00,2026-03-07
+All Bar One Tower of London,EC3N,M&B,Amstel,£5.95,2026-03-07
+All Bar One Tower of London,EC3N,M&B,Guinness,£6.00,2026-03-07
+All Bar One Tower of London,EC3N,M&B,Neck Oil,£7.00,2026-03-07
+Crutched Friar,EC3N,Nicholson's (M&B),Amstel,£6.45,2026-03-07
+Crutched Friar,EC3N,Nicholson's (M&B),Guinness,£6.75,2026-03-07
+Crutched Friar,EC3N,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Sea Horse Fleet Street,EC4A,Nicholson's (M&B),Amstel,£6.55,2026-03-07
+Sea Horse Fleet Street,EC4A,Nicholson's (M&B),Guinness,£6.80,2026-03-07
+Sea Horse Fleet Street,EC4A,Nicholson's (M&B),Neck Oil,£7.45,2026-03-07
+Monument,E1,Greene King,Greene King IPA,£6.10,2026-03-07
+Monument,E1,Greene King,Amstel,£6.40,2026-03-07
+Monument,E1,Greene King,Guinness,£6.70,2026-03-07
+Monument,E1,Greene King,Neck Oil,£7.55,2026-03-07
+Railway (EC2),EC2A,Greene King,Greene King IPA,£6.10,2026-03-07
+Railway (EC2),EC2A,Greene King,Guinness,£6.70,2026-03-07
+Railway (EC2),EC2A,Greene King,Neck Oil,£7.50,2026-03-07
+Kings Arms (Bishopsgate),EC2M,Greene King,Greene King IPA,£6.10,2026-03-07
+Kings Arms (Bishopsgate),EC2M,Greene King,Guinness,£6.70,2026-03-07
+Kings Arms (Bishopsgate),EC2M,Greene King,Neck Oil,£7.55,2026-03-07
+Red Lion (Moorgate),EC2M,Greene King,Greene King IPA,£6.10,2026-03-07
+Red Lion (Moorgate),EC2M,Greene King,Guinness,£6.65,2026-03-07
+Red Lion (Moorgate),EC2M,Greene King,Neck Oil,£7.65,2026-03-07
+Lord Raglan (City),EC3V,Nicholson's (M&B),Amstel,£6.20,2026-03-07
+Lord Raglan (City),EC3V,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Lord Raglan (City),EC3V,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Ye Olde London,EC4A,Nicholson's (M&B),Estrella,£6.55,2026-03-07
+Ye Olde London,EC4A,Nicholson's (M&B),Neck Oil,£7.50,2026-03-07
+1 Lombard Street,EC3V,Independent,Guinness,£8.00,2026-03-07
+The Sir Michael Balcon,W5,Wetherspoon,Bud Light,£2.55,2026-03-07
+The Sir Michael Balcon,W5,Wetherspoon,Guinness,£3.49,2026-03-07
+Wetherspoons Victoria Station,SW1V,Wetherspoon,Bud Light,£4.39,2026-03-07
+Wetherspoons Victoria Station,SW1V,Wetherspoon,Stella Artois,£6.33,2026-03-07
+Wetherspoons Victoria Station,SW1V,Wetherspoon,Guinness,£5.82,2026-03-07
+The Willow Walk,SW1V,Wetherspoon,Bud Light,£4.39,2026-03-07
+The Willow Walk,SW1V,Wetherspoon,Guinness,£5.82,2026-03-07
+The Montagu Pyke,WC2H,Wetherspoon,Stella Artois,£6.13,2026-03-07
+The Rose & Crown,SW1,Independent,Fosters,£4.80,2026-03-07
+Alma,SW1,Independent,Guinness,£5.50,2026-03-07
+The Coach & Horses (Bow St),WC2E,Independent,Timothy Taylor Landlord,£5.10,2026-03-07
+The Coach & Horses (Bow St),WC2E,Independent,Amstel,£5.70,2026-03-07
+The Coach & Horses (Bow St),WC2E,Independent,Guinness,£6.35,2026-03-07
+The Coach & Horses (Bow St),WC2E,Independent,Neck Oil,£7.25,2026-03-07
+The Coach & Horses (Bow St),WC2E,Independent,Peroni,£7.25,2026-03-07
+Cask Pub & Kitchen,SW1V,Independent,Cask Ale,£5.50,2026-03-07
+The Kings Arms,SW1,Nicholson's (M&B),Guinness,£5.50,2026-03-07
+The Kings Arms,SW1,Nicholson's (M&B),Madri,£6.00,2026-03-07
+Adam & Eve,SW1,Nicholson's (M&B),Amstel,£6.15,2026-03-07
+Adam & Eve,SW1,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Adam & Eve,SW1,Nicholson's (M&B),Peroni,£7.35,2026-03-07
+Adam & Eve,SW1,Nicholson's (M&B),Neck Oil,£7.40,2026-03-07
+Silver Cross,WC2N,Nicholson's (M&B),Amstel,£6.25,2026-03-07
+Silver Cross,WC2N,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Silver Cross,WC2N,Nicholson's (M&B),Neck Oil,£7.30,2026-03-07
+Silver Cross,WC2N,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Albert (Victoria),SW1H,Nicholson's (M&B),Amstel,£6.15,2026-03-07
+Albert (Victoria),SW1H,Nicholson's (M&B),Guinness,£6.65,2026-03-07
+Albert (Victoria),SW1H,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Grafton Arms,SW1V,Nicholson's (M&B),Amstel,£6.15,2026-03-07
+Grafton Arms,SW1V,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Grafton Arms,SW1V,Nicholson's (M&B),Peroni,£7.25,2026-03-07
+Grafton Arms,SW1V,Nicholson's (M&B),Neck Oil,£7.30,2026-03-07
+Two Chairmen,SW1A,Nicholson's (M&B),Amstel,£6.15,2026-03-07
+Two Chairmen,SW1A,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Two Chairmen,SW1A,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Two Chairmen,SW1A,Nicholson's (M&B),Neck Oil,£7.30,2026-03-07
+Three Tuns (Westminster),SW1H,Nicholson's (M&B),Amstel,£6.15,2026-03-07
+Three Tuns (Westminster),SW1H,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Three Tuns (Westminster),SW1H,Nicholson's (M&B),Neck Oil,£7.40,2026-03-07
+Sherlock Holmes,WC2N,Nicholson's (M&B),Amstel,£6.45,2026-03-07
+Sherlock Holmes,WC2N,Nicholson's (M&B),Guinness,£6.55,2026-03-07
+Sherlock Holmes,WC2N,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Sherlock Holmes,WC2N,Nicholson's (M&B),Neck Oil,£7.45,2026-03-07
+Salisbury,WC2H,Nicholson's (M&B),Amstel,£6.45,2026-03-07
+Salisbury,WC2H,Nicholson's (M&B),Guinness,£6.45,2026-03-07
+Salisbury,WC2H,Nicholson's (M&B),Neck Oil,£7.50,2026-03-07
+Salisbury,WC2H,Nicholson's (M&B),Peroni,£7.55,2026-03-07
+Shakespeares Head (Soho),WC2H,Nicholson's (M&B),Amstel,£6.25,2026-03-07
+Shakespeares Head (Soho),WC2H,Nicholson's (M&B),Guinness,£6.45,2026-03-07
+Shakespeares Head (Soho),WC2H,Nicholson's (M&B),Peroni,£7.50,2026-03-07
+Shakespeares Head (Soho),WC2H,Nicholson's (M&B),Neck Oil,£7.50,2026-03-07
+Chelsea Potter,SW3,Nicholson's (M&B),Amstel,£6.30,2026-03-07
+Chelsea Potter,SW3,Nicholson's (M&B),Guinness,£6.50,2026-03-07
+Chelsea Potter,SW3,Nicholson's (M&B),Peroni,£7.45,2026-03-07
+Chelsea Potter,SW3,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Paxtons Head,SW1X,Nicholson's (M&B),Amstel,£6.30,2026-03-07
+Paxtons Head,SW1X,Nicholson's (M&B),Guinness,£6.70,2026-03-07
+Paxtons Head,SW1X,Nicholson's (M&B),Peroni,£7.45,2026-03-07
+Paxtons Head,SW1X,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Plumbers Arms,SW1X,Nicholson's (M&B),Amstel,£6.10,2026-03-07
+Plumbers Arms,SW1X,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Plumbers Arms,SW1X,Nicholson's (M&B),Peroni,£7.20,2026-03-07
+Plumbers Arms,SW1X,Nicholson's (M&B),Neck Oil,£7.35,2026-03-07
+Masons Arms (Mayfair),W1S,Nicholson's (M&B),Amstel,£6.00,2026-03-07
+Masons Arms (Mayfair),W1S,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Masons Arms (Mayfair),W1S,Nicholson's (M&B),Neck Oil,£7.05,2026-03-07
+Masons Arms (Mayfair),W1S,Nicholson's (M&B),Peroni,£7.35,2026-03-07
+Punch & Judy,WC2E,Nicholson's (M&B),Guinness,£6.80,2026-03-07
+Punch & Judy,WC2E,Nicholson's (M&B),Peroni,£7.85,2026-03-07
+Punch & Judy,WC2E,Nicholson's (M&B),Neck Oil,£8.05,2026-03-07
+Bag O'Nails,SW1V,Nicholson's (M&B),Guinness,£6.45,2026-03-07
+Bag O'Nails,SW1V,Nicholson's (M&B),Peroni,£7.50,2026-03-07
+Old Star,SW1H,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Old Star,SW1H,Nicholson's (M&B),Neck Oil,£7.30,2026-03-07
+Old Star,SW1H,Nicholson's (M&B),Peroni,£7.35,2026-03-07
+Greencoat Boy,SW1P,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Greencoat Boy,SW1P,Nicholson's (M&B),Neck Oil,£7.50,2026-03-07
+Glass Blower,W1B,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Glass Blower,W1B,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Glass Blower,W1B,Nicholson's (M&B),Neck Oil,£7.45,2026-03-07
+Nolan's,SW1,Independent,Guinness,£5.70,2026-03-07
+Nolan's,SW1,Independent,Stella Artois,£5.70,2026-03-07
+The Jolly Gardeners,SW1,Independent,Guinness,£6.70,2026-03-07
+The Princess of Wales,SW1,Stonegate,Pravha,£5.85,2026-03-07
+The Princess of Wales,SW1,Stonegate,Camden Hells,£6.95,2026-03-07
+Brewdog Waterloo,SE1,BrewDog,Lost Lager,£7.10,2026-03-07
+Boisdale of Belgravia,SW1W,Independent,Guinness,£7.90,2026-03-07
+Hippodrome Casino,WC2H,Independent,Stella Artois,£7.31,2026-03-07
+Crown (Covent Garden),WC2E,Nicholson's (M&B),Guinness,£6.45,2026-03-07
+Crown (Covent Garden),WC2E,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Crown (Covent Garden),WC2E,Nicholson's (M&B),Peroni,£7.55,2026-03-07
+Prince of Wales (Covent Garden),WC2E,Nicholson's (M&B),Guinness,£6.40,2026-03-07
+Prince of Wales (Covent Garden),WC2E,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Prince of Wales (Covent Garden),WC2E,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Golden Lion (Soho),W1F,Nicholson's (M&B),Amstel,£6.45,2026-03-07
+Golden Lion (Soho),W1F,Nicholson's (M&B),Guinness,£6.40,2026-03-07
+Golden Lion (Soho),W1F,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Golden Lion (Soho),W1F,Nicholson's (M&B),Neck Oil,£7.50,2026-03-07
+Rose & Crown (Mayfair),W1J,Nicholson's (M&B),Amstel,£6.35,2026-03-07
+Rose & Crown (Mayfair),W1J,Nicholson's (M&B),Guinness,£6.70,2026-03-07
+Rose & Crown (Mayfair),W1J,Nicholson's (M&B),Peroni,£7.65,2026-03-07
+Rose & Crown (Mayfair),W1J,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
+Leicester Arms,WC2H,Nicholson's (M&B),Amstel,£6.35,2026-03-07
+Leicester Arms,WC2H,Nicholson's (M&B),Guinness,£6.45,2026-03-07
+Leicester Arms,WC2H,Nicholson's (M&B),Peroni,£7.35,2026-03-07
+Leicester Arms,WC2H,Nicholson's (M&B),Neck Oil,£7.35,2026-03-07
+Garrick Arms,WC2H,Nicholson's (M&B),Amstel,£6.35,2026-03-07
+Garrick Arms,WC2H,Nicholson's (M&B),Guinness,£6.55,2026-03-07
+Garrick Arms,WC2H,Nicholson's (M&B),Peroni,£7.40,2026-03-07
+Garrick Arms,WC2H,Nicholson's (M&B),Neck Oil,£7.40,2026-03-07
+Colonies (Victoria),SW1Y,Nicholson's (M&B),Amstel,£6.20,2026-03-07
+Colonies (Victoria),SW1Y,Nicholson's (M&B),Guinness,£6.35,2026-03-07
+Colonies (Victoria),SW1Y,Nicholson's (M&B),Neck Oil,£7.45,2026-03-07
+The White Swan,WC1N,Wetherspoon,Bud Light,£2.66,2026-03-07
+The White Swan,WC1N,Wetherspoon,Guinness,£4.21,2026-03-07
+The Ice Wharf,NW1,Wetherspoon,Bud Light,£3.66,2026-03-07
+The Marian Anderson,WC1E,Wetherspoon,Guinness,£4.00,2026-03-07
+Hercules Pillars,WC2A,Independent,Cask Ale,£4.20,2026-03-07
+The Boot,WC1N,Independent,Fosters,£4.80,2026-03-07
+The Abbey Tavern,NW1,Independent,Amstel,£5.00,2026-03-07
+Camden Head (Camden),NW1,Independent,Amstel,£5.00,2026-03-07
+McGlynn's Free House,NW1,Independent,Kronenbourg,£5.20,2026-03-07
+The Coronet,N7,Wetherspoon,Carlsberg,£2.66,2026-03-07
+Wenlock Arms,N1,Independent,Hophead,£4.80,2026-03-07
+The Harrison,WC1H,Independent,Amstel,£5.00,2026-03-07
+The Lamb,WC1N,Independent,Cask Ale,£5.00,2026-03-07
+The Snooty Fox,N1,Independent,Amstel,£5.95,2026-03-07
+The Snooty Fox,N1,Independent,Guinness,£5.95,2026-03-07
+The Snooty Fox,N1,Independent,Neck Oil,£6.80,2026-03-07
+Camden Head (Islington),N1,Nicholson's (M&B),Amstel,£6.00,2026-03-07
+Camden Head (Islington),N1,Nicholson's (M&B),Guinness,£6.30,2026-03-07
+Camden Head (Islington),N1,Nicholson's (M&B),Peroni,£7.35,2026-03-07
+Camden Head (Islington),N1,Nicholson's (M&B),Neck Oil,£7.40,2026-03-07
+Hope & Anchor,N1,Independent,Amstel,£5.90,2026-03-07
+Hope & Anchor,N1,Independent,Guinness,£6.10,2026-03-07
+Hope & Anchor,N1,Independent,Peroni,£7.10,2026-03-07
+The Regent,N1,Independent,Guinness,£6.40,2026-03-07
+The Regent,N1,Independent,Camden Hells,£6.50,2026-03-07
+Lucas Arms,WC1X,Nicholson's (M&B),Amstel,£6.05,2026-03-07
+Lucas Arms,WC1X,Nicholson's (M&B),Guinness,£6.05,2026-03-07
+Lucas Arms,WC1X,Nicholson's (M&B),Peroni,£6.90,2026-03-07
+Lucas Arms,WC1X,Nicholson's (M&B),Neck Oil,£6.55,2026-03-07
+The Island Queen,N1,Independent,Camden Hells,£7.00,2026-03-07
+Canonbury Tavern,N1,Independent,Asahi,£7.70,2026-03-07
+The York,N1,Independent,Peroni,£7.45,2026-03-07
+Sports Bar & Grill Old Street,EC1V,Nicholson's (M&B),Amstel,£6.35,2026-03-07
+Sports Bar & Grill Old Street,EC1V,Nicholson's (M&B),Guinness,£6.75,2026-03-07
+Sports Bar & Grill Old Street,EC1V,Nicholson's (M&B),Neck Oil,£7.70,2026-03-07
+The Cellar Taps,EC1V,Nicholson's (M&B),Amstel,£5.85,2026-03-07
+The Cellar Taps,EC1V,Nicholson's (M&B),Guinness,£6.30,2026-03-07
+The Cellar Taps,EC1V,Nicholson's (M&B),Neck Oil,£7.55,2026-03-07
