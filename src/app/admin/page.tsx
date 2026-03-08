@@ -27,6 +27,18 @@ interface Submission {
   created_at: string;
 }
 
+interface PriceSubmission {
+  id: string;
+  pub_id: string | null;
+  pub_name: string;
+  brand: string;
+  type: string;
+  price_pence: number;
+  is_correction: boolean;
+  existing_price_pence: number | null;
+  submitted_at: string;
+}
+
 /* ─── helpers ─── */
 
 function penceToPounds(p: number) {
@@ -741,6 +753,116 @@ function SubmissionsSection() {
                     className="bg-ceefax-red text-black px-2 text-xs font-bold"
                   >
                     REJECT
+                  </button>
+                </span>
+              </div>
+              <div className="h-px bg-ceefax-blue" />
+            </div>
+          ))}
+          <div className="h-px bg-ceefax-cyan" />
+        </div>
+      )}
+      {msg && <p className="text-ceefax-green mt-2">{msg}</p>}
+
+      {/* Price Submissions */}
+      <div className="h-px bg-ceefax-yellow my-4" />
+      <PriceSubmissionsSection />
+    </div>
+  );
+}
+
+/* ─── PRICE SUBMISSIONS SUB-SECTION ─── */
+
+function PriceSubmissionsSection() {
+  const [subs, setSubs] = useState<PriceSubmission[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [msg, setMsg] = useState("");
+
+  const fetchSubs = useCallback(() => {
+    setLoading(true);
+    fetch("/api/admin/price-submissions")
+      .then((r) => r.json())
+      .then((d) => {
+        setSubs(d.submissions ?? []);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    fetchSubs();
+  }, [fetchSubs]);
+
+  async function handleAction(id: string, action: "approve" | "reject") {
+    const res = await fetch("/api/admin/price-submissions", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, action }),
+    });
+    const data = await res.json();
+    if (data.success) {
+      setMsg(`Price ${action === "approve" ? "APPROVED" : "REJECTED"}`);
+      setSubs((prev) => prev.filter((s) => s.id !== id));
+      setTimeout(() => setMsg(""), 3000);
+    }
+  }
+
+  return (
+    <div>
+      <h2 className="text-ceefax-cyan mb-2" style={{ fontSize: "1.5em" }}>
+        PRICE SUBMISSIONS
+      </h2>
+
+      {loading ? (
+        <p className="text-ceefax-cyan animate-pulse">░░░ LOADING... ░░░</p>
+      ) : subs.length === 0 ? (
+        <p className="text-ceefax-yellow">No pending price submissions.</p>
+      ) : (
+        <div>
+          <div className="bg-ceefax-cyan text-black font-bold flex text-xs md:text-lg px-1">
+            <span className="flex-1">PUB</span>
+            <span className="w-28">BRAND</span>
+            <span className="w-16 text-right">PRICE</span>
+            <span className="w-16 text-right hidden md:block">TYPE</span>
+            <span className="w-28 text-right">ACTIONS</span>
+          </div>
+          <div className="h-px bg-ceefax-cyan" />
+          {subs.map((s) => (
+            <div key={s.id}>
+              <div className="flex text-xs md:text-lg px-1 py-px items-center">
+                <span className="flex-1 text-ceefax-white truncate">{s.pub_name}</span>
+                <span className="w-28 text-ceefax-magenta">{s.brand}</span>
+                <span className="w-16 text-right text-ceefax-green font-bold">
+                  {s.is_correction ? (
+                    <span>
+                      <span className="text-ceefax-red line-through">
+                        {penceToPounds(s.existing_price_pence ?? 0)}
+                      </span>
+                      {" "}
+                      {penceToPounds(s.price_pence)}
+                    </span>
+                  ) : (
+                    penceToPounds(s.price_pence)
+                  )}
+                </span>
+                <span className="w-16 text-right text-ceefax-cyan hidden md:block">{s.type}</span>
+                <span className="w-28 text-right flex justify-end gap-1 items-center">
+                  {s.is_correction && (
+                    <span className="bg-ceefax-yellow text-black px-1 text-xs font-bold mr-1">
+                      FIX
+                    </span>
+                  )}
+                  <button
+                    onClick={() => handleAction(s.id, "approve")}
+                    className="bg-ceefax-green text-black px-2 text-xs font-bold"
+                  >
+                    OK
+                  </button>
+                  <button
+                    onClick={() => handleAction(s.id, "reject")}
+                    className="bg-ceefax-red text-black px-2 text-xs font-bold"
+                  >
+                    NO
                   </button>
                 </span>
               </div>

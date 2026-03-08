@@ -6,6 +6,8 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   const params = req.nextUrl.searchParams;
   const query = params.get("q")?.trim().toLowerCase() ?? "";
+  const pubName = params.get("pubName")?.trim().toLowerCase() ?? "";
+  const area = params.get("area")?.trim().toLowerCase() ?? "";
   const beerType = params.get("beerType") ?? "all";
   const maxPrice = params.get("maxPrice") ?? "all";
   const sort = params.get("sort") ?? "price_asc";
@@ -44,7 +46,7 @@ export async function GET(req: NextRequest) {
       if (row.price_pence > maxPence) return false;
     }
 
-    // Text query filter (pub name, postcode, borough, neighbourhood)
+    // Text query filter (legacy: pub name, postcode, borough, neighbourhood)
     if (query) {
       const match =
         pub.name.toLowerCase().includes(query) ||
@@ -54,6 +56,20 @@ export async function GET(req: NextRequest) {
       if (!match) return false;
     }
 
+    // Pub name filter
+    if (pubName) {
+      if (!pub.name.toLowerCase().includes(pubName)) return false;
+    }
+
+    // Area filter (borough, neighbourhood, postcode)
+    if (area) {
+      const areaMatch =
+        (pub.borough?.toLowerCase().includes(area) ?? false) ||
+        (pub.neighbourhood?.toLowerCase().includes(area) ?? false) ||
+        (pub.postcode?.toLowerCase().includes(area) ?? false);
+      if (!areaMatch) return false;
+    }
+
     return true;
   });
 
@@ -61,6 +77,7 @@ export async function GET(req: NextRequest) {
   const pubMap = new Map<
     string,
     {
+      pub_id: string;
       pub_name: string;
       postcode: string;
       borough: string;
@@ -82,6 +99,7 @@ export async function GET(req: NextRequest) {
     const existing = pubMap.get(row.pub_id);
     if (!existing || row.price_pence < existing.price_pence) {
       pubMap.set(row.pub_id, {
+        pub_id: row.pub_id,
         pub_name: pub.name,
         postcode: pub.postcode ?? "",
         borough: pub.borough ?? "",

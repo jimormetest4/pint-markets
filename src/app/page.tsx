@@ -159,6 +159,21 @@ function EmptyState() {
         ════════════════════════════════════════════════
       </div>
 
+      <div className="text-center py-2">
+        <a
+          href="https://buymeacoffee.com/jimorme"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-ceefax-yellow text-black font-bold px-6 py-2 text-base sm:text-lg md:text-xl tracking-wide hover:brightness-110 transition-none"
+        >
+          ▶ BUY ME A PINT ◀
+        </a>
+      </div>
+
+      <div className="text-ceefax-yellow overflow-hidden whitespace-nowrap">
+        ════════════════════════════════════════════════
+      </div>
+
       <div className="text-ceefax-magenta mt-4">
         A Teletext service from PINT MARKETS LTD
       </div>
@@ -316,6 +331,21 @@ function LiveData({ data }: LiveDataProps) {
         <p className="text-ceefax-cyan text-sm mt-1">
           Help us track London&apos;s pint prices
         </p>
+      </div>
+
+      <div className="text-ceefax-yellow mt-2 overflow-hidden whitespace-nowrap">
+        ════════════════════════════════════════════════
+      </div>
+
+      <div className="text-center py-2">
+        <a
+          href="https://buymeacoffee.com/jimorme"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-ceefax-yellow text-black font-bold px-6 py-2 text-base sm:text-lg md:text-xl tracking-wide hover:brightness-110 transition-none"
+        >
+          ▶ BUY ME A PINT ◀
+        </a>
       </div>
 
       <div className="text-ceefax-yellow mt-2 overflow-hidden whitespace-nowrap">

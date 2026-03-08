@@ -1,0 +1,301 @@
+{
+  "description": "West London pubs data for Pint Markets price tracker. Researched March 2026.",
+  "pubs": [
+    {
+      "name": "The White Horse",
+      "address": "1-3 Parsons Green",
+      "postcode": "SW6 4UL",
+      "latitude": 51.47435,
+      "longitude": -0.20041,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Harwood Arms",
+      "address": "27 Walham Grove",
+      "postcode": "SW6 1QR",
+      "latitude": 51.48290,
+      "longitude": -0.19646,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Mitre",
+      "address": "81 Dawes Road",
+      "postcode": "SW6 7DU",
+      "latitude": 51.47980,
+      "longitude": -0.19870,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Durell Arms",
+      "address": "704 Fulham Road",
+      "postcode": "SW6 5SA",
+      "latitude": 51.47730,
+      "longitude": -0.20270,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "Brook House",
+      "address": "65 New Kings Road",
+      "postcode": "SW6 4SG",
+      "latitude": 51.47470,
+      "longitude": -0.19300,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Rose",
+      "address": "1 Harwood Terrace",
+      "postcode": "SW6 2AF",
+      "latitude": 51.47750,
+      "longitude": -0.18330,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Golden Lion",
+      "address": "57 Fulham High Street",
+      "postcode": "SW6 3JJ",
+      "latitude": 51.47170,
+      "longitude": -0.20610,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Cock Tavern",
+      "address": "360 North End Road",
+      "postcode": "SW6 1LY",
+      "latitude": 51.48100,
+      "longitude": -0.19680,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Atlas",
+      "address": "16 Seagrave Road",
+      "postcode": "SW6 1RX",
+      "latitude": 51.48410,
+      "longitude": -0.19550,
+      "neighbourhood": "Fulham"
+    },
+    {
+      "name": "The Dove",
+      "address": "19 Upper Mall",
+      "postcode": "W6 9TA",
+      "latitude": 51.49050,
+      "longitude": -0.23480,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "The Old Ship",
+      "address": "25 Upper Mall",
+      "postcode": "W6 9TD",
+      "latitude": 51.49060,
+      "longitude": -0.23430,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "The Blue Anchor",
+      "address": "13 Lower Mall",
+      "postcode": "W6 9DJ",
+      "latitude": 51.49030,
+      "longitude": -0.23130,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "The Dartmouth Castle",
+      "address": "26 Glenthorne Road",
+      "postcode": "W6 0LS",
+      "latitude": 51.49250,
+      "longitude": -0.22820,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "The Andover Arms",
+      "address": "57 Aldensley Road",
+      "postcode": "W6 0DL",
+      "latitude": 51.49380,
+      "longitude": -0.23250,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "The Hammersmith Ram",
+      "address": "81 King Street",
+      "postcode": "W6 9HW",
+      "latitude": 51.49200,
+      "longitude": -0.22700,
+      "neighbourhood": "Hammersmith"
+    },
+    {
+      "name": "Princess Victoria",
+      "address": "217 Uxbridge Road",
+      "postcode": "W12 9DH",
+      "latitude": 51.50643,
+      "longitude": -0.24082,
+      "neighbourhood": "Shepherd's Bush"
+    },
+    {
+      "name": "The Eagle",
+      "address": "215 Askew Road",
+      "postcode": "W12 9AZ",
+      "latitude": 51.50065,
+      "longitude": -0.23941,
+      "neighbourhood": "Shepherd's Bush"
+    },
+    {
+      "name": "The Anglesea Arms",
+      "address": "35 Wingate Road",
+      "postcode": "W6 0UR",
+      "latitude": 51.49530,
+      "longitude": -0.23000,
+      "neighbourhood": "Brook Green"
+    },
+    {
+      "name": "The Queen Adelaide",
+      "address": "412 Uxbridge Road",
+      "postcode": "W12 0NR",
+      "latitude": 51.50652,
+      "longitude": -0.23736,
+      "neighbourhood": "Shepherd's Bush"
+    },
+    {
+      "name": "The Sindercombe Social",
+      "address": "2 Goldhawk Road",
+      "postcode": "W12 8QD",
+      "latitude": 51.50220,
+      "longitude": -0.22580,
+      "neighbourhood": "Shepherd's Bush"
+    },
+    {
+      "name": "The Roebuck",
+      "address": "122 Chiswick High Road",
+      "postcode": "W4 1PU",
+      "latitude": 51.49300,
+      "longitude": -0.25900,
+      "neighbourhood": "Chiswick"
+    },
+    {
+      "name": "The Old Pack Horse",
+      "address": "434 Chiswick High Road",
+      "postcode": "W4 5TF",
+      "latitude": 51.49280,
+      "longitude": -0.27070,
+      "neighbourhood": "Chiswick"
+    },
+    {
+      "name": "The George IV",
+      "address": "185 Chiswick High Road",
+      "postcode": "W4 2DR",
+      "latitude": 51.49310,
+      "longitude": -0.26140,
+      "neighbourhood": "Chiswick"
+    },
+    {
+      "name": "The Bollo House",
+      "address": "13 Bollo Lane",
+      "postcode": "W4 5LR",
+      "latitude": 51.49460,
+      "longitude": -0.26800,
+      "neighbourhood": "Chiswick"
+    },
+    {
+      "name": "The Bell & Crown",
+      "address": "11-13 Thames Road, Strand-on-the-Green",
+      "postcode": "W4 3PL",
+      "latitude": 51.48680,
+      "longitude": -0.28130,
+      "neighbourhood": "Chiswick"
+    },
+    {
+      "name": "The Duke's Head",
+      "address": "8 Lower Richmond Road",
+      "postcode": "SW15 1JN",
+      "latitude": 51.46730,
+      "longitude": -0.21707,
+      "neighbourhood": "Putney"
+    },
+    {
+      "name": "The Half Moon",
+      "address": "93 Lower Richmond Road",
+      "postcode": "SW15 1EU",
+      "latitude": 51.46660,
+      "longitude": -0.21950,
+      "neighbourhood": "Putney"
+    },
+    {
+      "name": "The Spotted Horse",
+      "address": "122 Putney High Street",
+      "postcode": "SW15 1RG",
+      "latitude": 51.46450,
+      "longitude": -0.21640,
+      "neighbourhood": "Putney"
+    },
+    {
+      "name": "The Bricklayer's Arms",
+      "address": "32 Waterman Street",
+      "postcode": "SW15 1DD",
+      "latitude": 51.46610,
+      "longitude": -0.21530,
+      "neighbourhood": "Putney"
+    },
+    {
+      "name": "The Spencer Arms",
+      "address": "237 Lower Richmond Road",
+      "postcode": "SW15 1HJ",
+      "latitude": 51.46470,
+      "longitude": -0.22830,
+      "neighbourhood": "Putney"
+    },
+    {
+      "name": "The Drayton Arms",
+      "address": "153 Old Brompton Road",
+      "postcode": "SW5 0LJ",
+      "latitude": 51.48880,
+      "longitude": -0.18680,
+      "neighbourhood": "Earl's Court"
+    },
+    {
+      "name": "The Blackbird",
+      "address": "209 Earl's Court Road",
+      "postcode": "SW5 9AN",
+      "latitude": 51.49060,
+      "longitude": -0.19340,
+      "neighbourhood": "Earl's Court"
+    },
+    {
+      "name": "The Pembroke",
+      "address": "261 Old Brompton Road",
+      "postcode": "SW5 9JA",
+      "latitude": 51.48891,
+      "longitude": -0.19146,
+      "neighbourhood": "Earl's Court"
+    },
+    {
+      "name": "The Cadogan Arms",
+      "address": "298 King's Road",
+      "postcode": "SW3 5UG",
+      "latitude": 51.48500,
+      "longitude": -0.17350,
+      "neighbourhood": "Chelsea"
+    },
+    {
+      "name": "The Cross Keys",
+      "address": "1 Lawrence Street",
+      "postcode": "SW3 5NB",
+      "latitude": 51.48450,
+      "longitude": -0.16800,
+      "neighbourhood": "Chelsea"
+    },
+    {
+      "name": "The Fox & Pheasant",
+      "address": "1 Billing Road",
+      "postcode": "SW10 9UJ",
+      "latitude": 51.48020,
+      "longitude": -0.18150,
+      "neighbourhood": "Chelsea"
+    },
+    {
+      "name": "The Hollywood Arms",
+      "address": "45 Hollywood Road",
+      "postcode": "SW10 9HX",
+      "latitude": 51.48450,
+      "longitude": -0.18260,
+      "neighbourhood": "Chelsea"
+    }
+  ]
+}
