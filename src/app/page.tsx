@@ -1,6 +1,7 @@
 "use client";
 
 import CeefaxLayout from "@/components/CeefaxLayout";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -258,19 +259,31 @@ function LiveData({ data }: LiveDataProps) {
         </h2>
 
         {data.cheapest ? (
-          <div className="border-2 border-ceefax-green p-3">
-            <p className="text-ceefax-green text-xl sm:text-2xl md:text-3xl font-bold">
-              {penceToPounds(data.cheapest.price_pence)}
-            </p>
-            <p className="text-ceefax-white text-lg sm:text-xl mt-1">
-              {data.cheapest.pub_name}
-            </p>
-            <p className="text-ceefax-cyan">
-              {data.cheapest.brand} — {data.cheapest.type}
-            </p>
-            <p className="text-ceefax-magenta text-sm mt-1">
-              {data.cheapest.neighbourhood}
-            </p>
+          <div className="border-2 border-ceefax-green p-3 flex items-center gap-3 sm:gap-4">
+            <div className="flex-1 min-w-0">
+              <p className="text-ceefax-green text-xl sm:text-2xl md:text-3xl font-bold">
+                {penceToPounds(data.cheapest.price_pence)}
+              </p>
+              <p className="text-ceefax-white text-lg sm:text-xl mt-1">
+                {data.cheapest.pub_name}
+              </p>
+              <p className="text-ceefax-cyan">
+                {data.cheapest.brand} — {data.cheapest.type}
+              </p>
+              <p className="text-ceefax-magenta text-sm mt-1">
+                {data.cheapest.neighbourhood}
+              </p>
+            </div>
+            <div className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 border-ceefax-green">
+              <Image
+                src="/ceefax-presenter.jpeg"
+                alt="Ceefax presenter"
+                width={128}
+                height={128}
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
           </div>
         ) : (
           <div className="border border-ceefax-green p-3">
