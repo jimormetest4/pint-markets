@@ -191,14 +191,14 @@ function LiveData({ data }: LiveDataProps) {
         </h2>
 
         <div className="overflow-x-auto">
-          <div className="min-w-[480px]">
+          <div>
             {/* Table header */}
             <div className="bg-ceefax-cyan text-black font-bold flex text-sm md:text-lg px-1">
-              <span className="w-8 shrink-0">#</span>
+              <span className="w-7 shrink-0">#</span>
               <span className="flex-1 min-w-0">PUB</span>
-              <span className="w-28 md:w-32 text-right shrink-0">AREA</span>
-              <span className="w-24 md:w-28 text-right shrink-0">BRAND</span>
-              <span className="w-16 text-right shrink-0">PRICE</span>
+              <span className="w-20 md:w-32 text-right shrink-0">AREA</span>
+              <span className="w-20 md:w-28 text-right shrink-0">BRAND</span>
+              <span className="w-14 md:w-16 text-right shrink-0">PRICE</span>
             </div>
 
             {/* Separator */}
@@ -219,19 +219,19 @@ function LiveData({ data }: LiveDataProps) {
                   <div
                     className={`flex text-sm md:text-lg px-1 py-px ${priceColor}`}
                   >
-                    <span className="w-8 shrink-0 text-ceefax-yellow">
+                    <span className="w-7 shrink-0 text-ceefax-yellow">
                       {i + 1}.
                     </span>
                     <span className="flex-1 min-w-0 text-ceefax-white truncate">
                       {truncate(row.pub_name, 22)}
                     </span>
-                    <span className="w-28 md:w-32 text-right shrink-0 text-ceefax-cyan truncate">
+                    <span className="w-20 md:w-32 text-right shrink-0 text-ceefax-cyan truncate">
                       {truncate(row.neighbourhood, 16)}
                     </span>
-                    <span className="w-24 md:w-28 text-right shrink-0 text-ceefax-magenta truncate">
+                    <span className="w-20 md:w-28 text-right shrink-0 text-ceefax-magenta truncate">
                       {truncate(row.brand, 14)}
                     </span>
-                    <span className={`w-16 text-right shrink-0 ${priceColor}`}>
+                    <span className={`w-14 md:w-16 text-right shrink-0 ${priceColor}`}>
                       {penceToPounds(row.price_pence)}
                     </span>
                   </div>

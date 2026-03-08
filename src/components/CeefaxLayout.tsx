@@ -59,7 +59,7 @@ export default function CeefaxLayout({
       {/* Header bar */}
       <header className="flex items-center justify-between px-2 py-1 bg-ceefax-blue gap-2">
         <Link href="/" className="text-ceefax-yellow text-xl sm:text-2xl md:text-3xl tracking-wider font-bold whitespace-nowrap hover:brightness-110 transition-none">
-          PINT MARKETS
+          PINT MARKETS V001
         </Link>
         <div className="flex items-center gap-2 sm:gap-4 text-xs sm:text-lg md:text-xl whitespace-nowrap">
           <span className="text-ceefax-white">{pageNumber}</span>

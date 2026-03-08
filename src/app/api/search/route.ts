@@ -73,48 +73,29 @@ export async function GET(req: NextRequest) {
     return true;
   });
 
-  // Deduplicate — keep cheapest per pub
-  const pubMap = new Map<
-    string,
-    {
-      pub_id: string;
-      pub_name: string;
-      postcode: string;
-      borough: string;
-      neighbourhood: string;
-      brand: string;
-      type: string;
-      price_pence: number;
-      date_recorded: string;
-    }
-  >();
-
-  for (const row of filtered) {
+  // Return all price entries (no dedup — show every brand/type per pub)
+  const results = filtered.map((row) => {
     const pub = row.pubs as unknown as {
       name: string;
       postcode: string | null;
       borough: string | null;
       neighbourhood: string | null;
     };
-    const existing = pubMap.get(row.pub_id);
-    if (!existing || row.price_pence < existing.price_pence) {
-      pubMap.set(row.pub_id, {
-        pub_id: row.pub_id,
-        pub_name: pub.name,
-        postcode: pub.postcode ?? "",
-        borough: pub.borough ?? "",
-        neighbourhood: pub.neighbourhood ?? "",
-        brand: row.brand,
-        type: row.type,
-        price_pence: row.price_pence,
-        date_recorded: row.date_recorded,
-      });
-    }
-  }
+    return {
+      id: row.id,
+      pub_id: row.pub_id,
+      pub_name: pub.name,
+      postcode: pub.postcode ?? "",
+      borough: pub.borough ?? "",
+      neighbourhood: pub.neighbourhood ?? "",
+      brand: row.brand,
+      type: row.type,
+      price_pence: row.price_pence,
+      date_recorded: row.date_recorded,
+    };
+  });
 
-  const results = Array.from(pubMap.values());
-
-  // Re-sort after deduplication
+  // Sort results
   if (sort === "price_desc") {
     results.sort((a, b) => b.price_pence - a.price_pence);
   } else if (sort === "name") {

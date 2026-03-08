@@ -121,8 +121,8 @@ function CheapestPubs({ rows }: { rows: CheapestPubRow[] }) {
       <div className="bg-ceefax-cyan text-black font-bold flex text-xs md:text-lg px-1">
         <span className="w-7 shrink-0">#</span>
         <span className="flex-1 min-w-0">PUB</span>
-        <span className="w-24 md:w-32 text-right shrink-0">AREA</span>
-        <span className="w-20 md:w-28 text-right shrink-0">BRAND</span>
+        <span className="w-20 md:w-32 text-right shrink-0">AREA</span>
+        <span className="w-16 md:w-28 text-right shrink-0">BRAND</span>
         <span className="w-14 md:w-16 text-right shrink-0">PRICE</span>
       </div>
       <div className="h-px bg-ceefax-cyan" />
@@ -141,10 +141,10 @@ function CheapestPubs({ rows }: { rows: CheapestPubRow[] }) {
               <span className="flex-1 min-w-0 text-ceefax-white truncate">
                 {trunc(r.pub_name, 22)}
               </span>
-              <span className="w-24 md:w-32 text-right shrink-0 text-ceefax-cyan truncate">
+              <span className="w-20 md:w-32 text-right shrink-0 text-ceefax-cyan truncate">
                 {trunc(r.area, 14)}
               </span>
-              <span className="w-20 md:w-28 text-right shrink-0 text-ceefax-magenta truncate">
+              <span className="w-16 md:w-28 text-right shrink-0 text-ceefax-magenta truncate">
                 {trunc(r.brand, 12)}
               </span>
               <span className={`w-14 md:w-16 text-right shrink-0 font-bold ${priceColor}`}>
