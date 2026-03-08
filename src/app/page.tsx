@@ -274,7 +274,7 @@ function LiveData({ data }: LiveDataProps) {
                 {data.cheapest.neighbourhood}
               </p>
             </div>
-            <div className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 border-ceefax-green">
+            <div className="shrink-0 w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 border-ceefax-green">
               <Image
                 src="/ceefax-presenter.jpeg"
                 alt="Ceefax presenter"
