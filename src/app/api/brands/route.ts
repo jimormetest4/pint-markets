@@ -14,7 +14,7 @@ export async function GET() {
   }
 
   // Get unique brands
-  const brands = [...new Set((data ?? []).map((d) => d.brand))];
+  const brands = Array.from(new Set((data ?? []).map((d) => d.brand)));
 
   return NextResponse.json({ brands });
 }

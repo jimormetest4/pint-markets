@@ -103,7 +103,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  let resolvedPubId = pubId || null;
+  const resolvedPubId = pubId || null;
   let pubSubmissionId: string | null = null;
 
   // If new pub, create a pub_submission

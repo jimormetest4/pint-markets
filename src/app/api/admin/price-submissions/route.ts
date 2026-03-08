@@ -22,7 +22,7 @@ export async function GET() {
   }
 
   // Enrich with pub names
-  const pubIds = [...new Set((data ?? []).map((s) => s.pub_id).filter(Boolean))];
+  const pubIds = Array.from(new Set((data ?? []).map((s) => s.pub_id).filter(Boolean)));
   let pubMap: Record<string, string> = {};
 
   if (pubIds.length > 0) {
