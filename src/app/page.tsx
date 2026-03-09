@@ -216,12 +216,18 @@ function RotatingStatsPanel({
   const [phase, setPhase] = useState<"visible" | "scanline-out" | "scanline-in">("visible");
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Shuffle on mount: pin overall cheapest/priciest first, shuffle the rest
+  // Build strictly alternating cheapest/priciest sequence on mount
   const [items] = useState(() => {
-    if (spotlights.length <= 2) return spotlights;
-    const pinned = spotlights.slice(0, 2);
-    const rest = shuffle(spotlights.slice(2));
-    return [...pinned, ...rest];
+    if (spotlights.length <= 1) return spotlights;
+    const cheapPool = shuffle(spotlights.filter((s) => s.mode === "cheapest"));
+    const pricePool = shuffle(spotlights.filter((s) => s.mode === "priciest"));
+    const result: Spotlight[] = [];
+    const maxLen = Math.max(cheapPool.length, pricePool.length);
+    for (let i = 0; i < maxLen; i++) {
+      if (i < cheapPool.length) result.push(cheapPool[i]);
+      if (i < pricePool.length) result.push(pricePool[i]);
+    }
+    return result;
   });
 
   const advance = useCallback(() => {
