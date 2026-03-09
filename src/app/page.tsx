@@ -3,7 +3,7 @@
 import CeefaxLayout from "@/components/CeefaxLayout";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface PriceRow {
   pub_name: string;
@@ -12,6 +12,17 @@ interface PriceRow {
   type: string;
   price_pence: number;
   date_recorded: string;
+}
+
+interface Spotlight {
+  title: string;
+  subtitle: string | null;
+  mode: "cheapest" | "priciest";
+  pub_name: string;
+  neighbourhood: string;
+  brand: string;
+  type: string;
+  price_pence: number;
 }
 
 interface HomeData {
@@ -23,6 +34,7 @@ interface HomeData {
     type: string;
     price_pence: number;
   } | null;
+  spotlights: Spotlight[];
   stats: {
     totalPubs: number;
     totalPrices: number;
@@ -182,6 +194,172 @@ function EmptyState() {
   );
 }
 
+const ROTATION_INTERVAL = 6000;
+
+// Shuffle array in place (Fisher-Yates)
+function shuffle<T>(arr: T[]): T[] {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function RotatingStatsPanel({
+  spotlights,
+  cheapest,
+}: {
+  spotlights: Spotlight[];
+  cheapest: HomeData["cheapest"];
+}) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [phase, setPhase] = useState<"visible" | "scanline-out" | "scanline-in">("visible");
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Shuffle on mount: pin overall cheapest/priciest first, shuffle the rest
+  const [items] = useState(() => {
+    if (spotlights.length <= 2) return spotlights;
+    const pinned = spotlights.slice(0, 2);
+    const rest = shuffle(spotlights.slice(2));
+    return [...pinned, ...rest];
+  });
+
+  const advance = useCallback(() => {
+    if (items.length <= 1) return;
+    setPhase("scanline-out");
+    setTimeout(() => {
+      setActiveIndex((prev) => (prev + 1) % items.length);
+      setPhase("scanline-in");
+      setTimeout(() => setPhase("visible"), 400);
+    }, 400);
+  }, [items.length]);
+
+  useEffect(() => {
+    if (items.length <= 1) return;
+    timerRef.current = setInterval(advance, ROTATION_INTERVAL);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [advance, items.length]);
+
+  // Fallback for no spotlights
+  if (items.length === 0) {
+    if (!cheapest) {
+      return (
+        <div>
+          <h2 className="text-ceefax-yellow mb-2 text-xl sm:text-2xl md:text-3xl">
+            ░░ TODAY&apos;S CHEAPEST ░░
+          </h2>
+          <div className="border border-ceefax-green p-3">
+            <p className="text-ceefax-green">
+              No prices recorded yet — be the first to submit!
+            </p>
+          </div>
+        </div>
+      );
+    }
+    // Static fallback with cheapest data
+    return (
+      <div>
+        <h2 className="text-ceefax-yellow mb-2 text-xl sm:text-2xl md:text-3xl">
+          ░░ TODAY&apos;S CHEAPEST ░░
+        </h2>
+        <div className="border-2 border-ceefax-green p-3 flex items-center gap-3 sm:gap-4">
+          <div className="flex-1 min-w-0">
+            <p className="text-ceefax-green text-xl sm:text-2xl md:text-3xl font-bold">
+              {penceToPounds(cheapest.price_pence)}
+            </p>
+            <p className="text-ceefax-white text-lg sm:text-xl mt-1">
+              {cheapest.pub_name}
+            </p>
+            <p className="text-ceefax-cyan">
+              {cheapest.brand} — {cheapest.type}
+            </p>
+            <p className="text-ceefax-magenta text-sm mt-1">
+              {cheapest.neighbourhood}
+            </p>
+          </div>
+          <div className="shrink-0 w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 border-ceefax-green">
+            <Image
+              src="/ceefax-presenter.jpeg"
+              alt="Ceefax presenter"
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const current = items[activeIndex];
+  const isCheapest = current.mode === "cheapest";
+  const borderColor = isCheapest ? "border-ceefax-green" : "border-ceefax-red";
+  const priceColor = isCheapest ? "text-ceefax-green" : "text-ceefax-red";
+  const imageSrc = isCheapest ? "/ceefax-presenter.jpeg" : "/gazzer.png";
+  const imageAlt = isCheapest ? "Ceefax presenter" : "Gazzer";
+
+  const heading = current.subtitle
+    ? `░░ ${current.title} ${current.subtitle} ░░`
+    : `░░ ${current.title} ░░`;
+
+  const headingColor = isCheapest ? "text-ceefax-yellow" : "text-ceefax-red";
+
+  return (
+    <div>
+      <h2
+        className={`${headingColor} mb-2 text-xl sm:text-2xl md:text-3xl transition-none`}
+      >
+        {heading}
+      </h2>
+
+      <div className={`border-2 ${borderColor} p-3 relative overflow-hidden`}>
+        {/* Scanline overlay for transition */}
+        {phase !== "visible" && (
+          <div
+            className="absolute inset-0 z-10 pointer-events-none"
+            style={{
+              background: "black",
+              animation: phase === "scanline-out"
+                ? "ceefax-wipe-down 400ms linear forwards"
+                : "ceefax-wipe-up 400ms linear forwards",
+            }}
+          />
+        )}
+
+        <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex-1 min-w-0">
+            <p className={`${priceColor} text-xl sm:text-2xl md:text-3xl font-bold`}>
+              {penceToPounds(current.price_pence)}
+            </p>
+            <p className="text-ceefax-white text-lg sm:text-xl mt-1">
+              {current.pub_name}
+            </p>
+            <p className="text-ceefax-cyan">
+              {current.brand} — {current.type}
+            </p>
+            <p className="text-ceefax-magenta text-sm mt-1">
+              {current.neighbourhood}
+            </p>
+          </div>
+          <div className={`shrink-0 w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 ${borderColor}`}>
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function LiveData({ data }: LiveDataProps) {
   return (
     <div className="py-2 space-y-4">
@@ -252,47 +430,8 @@ function LiveData({ data }: LiveDataProps) {
         ════════════════════════════════════════════════
       </div>
 
-      {/* TODAY'S CHEAPEST */}
-      <div>
-        <h2 className="text-ceefax-yellow mb-2 text-xl sm:text-2xl md:text-3xl">
-          ░░ TODAY&apos;S CHEAPEST ░░
-        </h2>
-
-        {data.cheapest ? (
-          <div className="border-2 border-ceefax-green p-3 flex items-center gap-3 sm:gap-4">
-            <div className="flex-1 min-w-0">
-              <p className="text-ceefax-green text-xl sm:text-2xl md:text-3xl font-bold">
-                {penceToPounds(data.cheapest.price_pence)}
-              </p>
-              <p className="text-ceefax-white text-lg sm:text-xl mt-1">
-                {data.cheapest.pub_name}
-              </p>
-              <p className="text-ceefax-cyan">
-                {data.cheapest.brand} — {data.cheapest.type}
-              </p>
-              <p className="text-ceefax-magenta text-sm mt-1">
-                {data.cheapest.neighbourhood}
-              </p>
-            </div>
-            <div className="shrink-0 w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 border-2 border-ceefax-green">
-              <Image
-                src="/ceefax-presenter.jpeg"
-                alt="Ceefax presenter"
-                width={128}
-                height={128}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-        ) : (
-          <div className="border border-ceefax-green p-3">
-            <p className="text-ceefax-green">
-              No prices recorded yet — be the first to submit!
-            </p>
-          </div>
-        )}
-      </div>
+      {/* ROTATING STATS PANEL */}
+      <RotatingStatsPanel spotlights={data.spotlights} cheapest={data.cheapest} />
 
       <div className="text-ceefax-yellow overflow-hidden whitespace-nowrap">
         ════════════════════════════════════════════════
