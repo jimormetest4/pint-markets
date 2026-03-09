@@ -194,7 +194,7 @@ function EmptyState() {
   );
 }
 
-const ROTATION_INTERVAL = 6000;
+const ROTATION_INTERVAL = 3900;
 
 // Shuffle array in place (Fisher-Yates)
 function shuffle<T>(arr: T[]): T[] {
@@ -236,8 +236,8 @@ function RotatingStatsPanel({
     setTimeout(() => {
       setActiveIndex((prev) => (prev + 1) % items.length);
       setPhase("scanline-in");
-      setTimeout(() => setPhase("visible"), 210);
-    }, 210);
+      setTimeout(() => setPhase("visible"), 400);
+    }, 400);
   }, [items.length]);
 
   useEffect(() => {
@@ -329,8 +329,8 @@ function RotatingStatsPanel({
             style={{
               background: "black",
               animation: phase === "scanline-out"
-                ? "ceefax-wipe-down 210ms linear forwards"
-                : "ceefax-wipe-up 210ms linear forwards",
+                ? "ceefax-wipe-down 400ms linear forwards"
+                : "ceefax-wipe-up 400ms linear forwards",
             }}
           />
         )}
