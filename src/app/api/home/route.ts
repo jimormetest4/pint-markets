@@ -117,7 +117,7 @@ export async function GET() {
     // By borough — all boroughs with distinct cheapest/priciest pubs
     const byBorough = groupBy((r) => r.pubs?.borough ?? "");
     const boroughPairs: Spotlight[] = [];
-    for (const [name, data] of byBorough) {
+    for (const [name, data] of Array.from(byBorough.entries())) {
       if (data.cheapest.pub_id === data.priciest.pub_id) continue;
       boroughPairs.push(toSpotlight("CHEAPEST IN", name.toUpperCase(), "cheapest", data.cheapest));
       boroughPairs.push(toSpotlight("PRICIEST IN", name.toUpperCase(), "priciest", data.priciest));
@@ -127,7 +127,7 @@ export async function GET() {
     // By beer type — all types with distinct cheapest/priciest pubs
     const byType = groupBy((r) => r.type ?? "");
     const typePairs: Spotlight[] = [];
-    for (const [name, data] of byType) {
+    for (const [name, data] of Array.from(byType.entries())) {
       if (data.cheapest.pub_id === data.priciest.pub_id) continue;
       typePairs.push(toSpotlight("CHEAPEST", name.toUpperCase(), "cheapest", data.cheapest));
       typePairs.push(toSpotlight("PRICIEST", name.toUpperCase(), "priciest", data.priciest));
@@ -137,7 +137,7 @@ export async function GET() {
     // By area (neighbourhood) — all areas with distinct cheapest/priciest pubs
     const byArea = groupBy((r) => r.pubs?.neighbourhood ?? "");
     const areaPairs: Spotlight[] = [];
-    for (const [name, data] of byArea) {
+    for (const [name, data] of Array.from(byArea.entries())) {
       if (data.cheapest.pub_id === data.priciest.pub_id) continue;
       areaPairs.push(toSpotlight("CHEAPEST IN", name.toUpperCase(), "cheapest", data.cheapest));
       areaPairs.push(toSpotlight("PRICIEST IN", name.toUpperCase(), "priciest", data.priciest));
